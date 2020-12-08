@@ -1,0 +1,151 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root{
+    --mainbg:#117bff;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+
+body{
+    height: 100vh;
+}
+
+#chatapp{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #555; */
+    
+}
+
+#container{
+    width: 80rem;
+    height:90vh;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0px 2px 20px 5px rgba(0, 0, 0, 0.2);
+}
+
+#header{
+    padding: 1rem;
+    padding-left: 2rem;
+    display: flex;
+    background-color:var(--mainbg);
+    height: 5rem;
+    align-items: center;
+}
+
+#header h3{
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+#messagearea{
+    height: 78%;
+    background-color: white;
+    overflow-y: auto;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+    width: .3rem;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+
+.messages{
+    max-width: 30rem;
+    background-color: var(--mainbg);
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.messages p{
+    font-size: 1.4rem;
+}
+
+.incoming{
+    background-color:#cde8fe;
+    float:left;
+    clear: both;
+}
+
+.outgoing{
+    background-color: #6fc5ff;
+    float: right;
+    clear: both;
+}
+
+
+
+#textareainput{
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    background-color: white;
+
+}
+
+button{
+    background-color: var(--mainbg);
+    border: none;
+    color: white;
+    outline: none;
+    width: 7rem;
+    height: 5rem;
+    border-radius: 4rem;
+}
+
+textarea{
+    padding: 1.5rem;
+    width: 80%;
+    outline: none;
+    border:none;
+    height: 5rem;
+    font-size: 1.6rem;
+    background-color: #ecf0f1;
+    resize: none;
+    border-radius: 4rem;
+}
+
+
+
+
+@media(max-width:700px){
+
+    .messages{
+        max-width: 20rem;
+    }
+
+}

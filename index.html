@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TrueChat | TrueChatapp</title>
+
+    <script defer src="/socket.io/socket.io.js"></script>
+    <script defer src="js/client.js"></script>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section id="chatapp">
+      <div id="container">
+        <div id="header">
+          <img src="img/icon.png" alt="" />
+          <h3>TrueChat</h3>
+        </div>
+
+        <div id="messagearea"></div>
+
+        <div id="textareainput">
+          <textarea
+            name="text"
+            id="usertext"
+            cols="30"
+            rows="1"
+            placeholder="Type a message"
+          ></textarea>
+          <button class="btn" onclick="sendmssg()">Send</button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
